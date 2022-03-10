@@ -1,0 +1,733 @@
+
+
+@font-face {
+  font-family: "Bold";
+  src: url('../fonts/NotoSans-SemiBold.ttf');
+
+}
+@font-face {
+  font-family: "Regular";
+  src: url('../fonts/NotoSans-Regular.ttf');
+
+}
+@font-face {
+  font-family: "Ligth";
+  src: url('../fonts/NotoSans-ExtraCondensedLight.ttf');
+
+}
+
+.my-nav{
+    border-radius: 0px; 
+    background-color: black;
+    margin: 0px;
+}
+
+.my-logo{
+    padding-left: 0px; 
+    padding-top: 0px;
+    width: 150px;
+}
+
+
+.my-logo2{
+    padding-left: 0px; 
+    padding-top: 8px;
+    width: 110px;
+}
+.img-redes{
+  width: 28px;
+}
+.h:hover{
+   background-color: black;
+}
+
+
+ul.nav a:hover { 
+   
+    background-color: black;
+    color: #fff;
+}
+
+
+
+ul.nav a { 
+    color:  #fff; 
+}
+.my-text-nav{
+    font-size: 12px;
+    font-family: Bold;
+}
+
+.btn-nav{
+    border-radius: 10px;
+    background: #339DC5;
+    font-size: 12px;
+    font-family:Regular;
+}
+ .p0{
+  padding-left: 0px;
+  padding-right: 0px;
+ }
+
+ .reg{
+   font-family:Regular;
+ }
+
+ .whit-in{
+  width: 130px;
+ }
+
+.padding-nav{
+  padding-left:25px;
+}
+
+.icon-nav{
+padding-top: 17px;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+ 
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centrado2{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-home{
+    font-family:Ligth;
+    font-size: 22px;
+}
+
+.bold{
+  font-family: Bold;
+  color: #000;
+}
+
+.pservicio{
+  padding-bottom: 25px;
+}
+
+.pserver{
+  padding-top: 15px;
+}
+
+.serviciotext{
+  font-size: 14px;
+  font-family: "Bold";
+  color: #000;
+}
+
+.social-bar {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
+}
+
+.icon-facebook {
+  background: #2E406E;
+}
+
+.icon-twitter {
+  background: #339DC5;
+}
+
+.icon-youtube {
+  background: #E83028;
+}
+
+.icon-instagram {
+  background: #BD0B96;
+}
+
+.icon:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+.borregost{
+  font-size: 16px;
+  padding-top: 5px;
+  color: #000;
+}
+
+.card-text{
+  padding-top: 8px;
+  text-align: justify;
+  font-size: 18px;
+  font-family: Ligth;
+  color: #000;
+}
+
+.card-text2{
+  text-align: justify;
+  font-size: 18px;
+  font-family: Bold;
+  color: #000;
+}
+
+ .p00{
+  padding-left: 0px;
+  padding-right: 0px;
+ }
+
+ .btn-car{
+  background-color: #0062a4;
+  color: #fff;
+  font-family: Regular;
+  border-radius: 10px;
+  width: 120px;
+
+ }
+
+ .div-im{
+background-image: url('../img/visitanos.png'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%; 
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+.m{
+  margin: 0px;
+}
+.pr{
+  position: relative;
+}
+
+.pa{
+  position: absolute;
+}
+
+.btna{
+  background-color: #db9600;
+  font-family:Regular;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.ptop{
+  padding-top: 70px;
+}
+
+.venta{
+  font-size: 18px;
+  color: #000;
+  font-family: Regular;
+  text-align: left;
+}
+
+.venta2{
+  font-size: 15px;
+  color: #000;
+  font-family: Regular;
+  text-align: left;
+}
+
+.btnac{
+  background-color: #d32945;
+  font-family:Regular;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.pt2{
+  padding-top: 25px;
+}
+
+.text-form{
+  font-size: 34px;
+  font-family:Bold;
+  color: #000;
+}
+
+.text-form2{
+  font-size: 22px;
+  font-family:Regular;
+  color: #000;
+}
+
+
+.btnfor{
+  background-color: #000;
+  font-family:Regular;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  width: 130px;
+}
+
+.pt3{
+  padding-top: 10px;
+}
+
+.borde{
+  border-radius: 8px;
+}
+
+.texts{
+  color: #000;
+  font-family:Regular;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  font-size: 20px
+}
+
+.pt5{
+  padding-top: 100px;
+}
+
+.pt6{
+  padding-top: 80px;
+}
+.pbun{
+  padding-bottom: 20px;
+}
+.infotext{
+  color: #000;
+   font-family:Regular;
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+.fomr-info{
+  border-radius: 6px;
+  background-color:white;
+}
+
+.btn-enin{
+ background-color: #000;
+ color: #fff;
+ font-family:Regular;
+ font-size: 16px;
+ border-radius: 8px;
+ width: 150px;
+}
+.tectfooter{
+  color: #fff;
+   font-family:Regular;
+}
+.pbb{
+  padding-bottom: 30px;
+}
+
+.pmodal{
+  padding-bottom: 60px;
+}
+input[type=text]::placeholder, input[type=email]::placeholder, #borrego::placeholder{ color: black; }
+
+.div-im2{
+background-image: url('../img/Mesa-de-trabajo-1.png'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 250px;
+ }
+
+ .texare{
+  color: #000;
+ }
+
+ .formtext{
+  color: #fff;
+  font-size: 16px;
+  font-family: Regular;
+ }
+
+ .pl{
+  padding-left: 0px;
+ }
+ .pr{
+  padding-right: 0px;
+ }
+.footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #000;
+}
+.dorpert{
+  text-align: center;
+}
+
+.dopertext{
+  text-align: justify;
+  font-family: Regular;
+  font-size: 18px;
+
+}
+
+.dopertext2{
+ 
+  font-family: Regular;
+  font-size: 18px;
+
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #92af4f;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #92af4f;
+    border-color: #fff;
+    border: 1px solid #92af4f;
+}
+
+.div-imdorper{
+background-image: url('../img/dorper/3.png'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%; 
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+.div-imdcon{
+background-image: url('../img/contacto/1.png'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%; 
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+ }
+
+
+ .text-dorb{
+  color: #fff;
+ }
+ .fomr-info2{
+  border-radius: 6px;
+  background-color:rgba(255,255,255,0.9);
+}
+
+.formcontc{
+   background-color:rgba(255,255,255,0.8);
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+.textconta{
+  font-size: 14px;
+  font-family: Regular;
+  color: #000;
+
+}
+
+.textfomcon{
+   font-family: Regular;
+   color: #000;
+
+}
+.p000{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.ptfo{
+  padding-top: 28px;
+}
+.btnconn{
+  background-color: #0062a4;
+  font-family: Regular;
+  color: #fff;
+  width: 120px;
+}
+
+.corderastt{
+  font-size: 17px;
+  font-family: Bold;
+}
+
+.pcotizar{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.div-linea{
+background-image: url('../img/curso/linea.png'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%; 
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+ }
+
+ .btncuros{
+  background-color: #d32945;
+  color: #fff;
+  font-family: Regular;
+  font-size: 18px;
+  width: 150px;
+ }
+
+ .pdcursos{
+  padding-top: 30px;
+  padding-bottom: 20px;
+ }
+
+ .buttoncur{
+  padding-bottom: 30px;
+ }
+
+.textforcotiza{
+  font-size: 17px;
+}
+.textforcotiza2{
+  font-size: 14px;
+}
+
+.btncotix{
+  background-color: #db9600;
+  color: #fff;
+  font-family: Regular;
+  font-size: 14px;
+  border-radius: 10px;
+  width: 100%;
+ }
+
+ .btncotix2{
+  background-color: #d32945;
+  color: #fff;
+  font-family: Regular;
+  font-size: 14px;
+  border-radius: 10px;
+  width: 200px;
+ }
+.ptextmodal{
+  font-size: 17px;
+   font-family: Bold;
+   color: #000;
+}
+
+.ptextmodal2{
+  font-size: 16px;
+   font-family: Regular;
+   text-align: left;
+}
+@media (max-width: 770px) {
+
+.pservicio{
+  padding-bottom: 15px;
+}
+
+.ptop{
+  padding-top: 40px;
+}
+.card-text2{
+  text-align: center;
+  font-size: 16px;
+  font-family: Bold;
+  color: #000;
+}
+
+.icon-nav{
+padding-top: 0px;
+}
+ 
+}
+
+
+@media (max-width: 470px) {
+  .img-b{
+    height: 200px;
+  }
+  .dorpert{
+  text-align: center;
+}
+.contactosss{
+  text-align: center;
+}
+.p000{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ .pl{
+  padding-left: 0px;
+   padding-right: 0px;
+ }
+ .pr{
+  padding-right: 0px;
+    padding-left: 0px;
+ }
+
+  .btna{
+  background-color: #db9600;
+  font-family:Regular;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.btnac{
+  background-color: #d32945;
+  font-family:Regular;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  width: 170px;
+}
+.paddforts{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+}
+@media (min-width: 1508px){
+.div-im2{
+background-image: url('../img/Mesa-de-trabajo-1.png'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 350px;
+  height: auto;
+ }
+}
+
+@media (min-width: 1745px) {
+
+.whit-in{
+  width: 180px;
+ }
+
+.my-text-nav{
+    font-size: 17px;
+    font-family: Bold;
+}
+
+.btn-nav{
+    border-radius: 10px;
+    background: red;
+    font-size: 18px;
+    font-family:Regular;
+}
+
+.img-redes{
+  width: 30px;
+}
+.my-logo{
+    padding-left: 0px; 
+    padding-top: 0px;
+    width: 150px;
+}
+  }
+
+.carousel {
+    width: 100%;
+}
+
+
+@media (min-width: 768px){
+.modal-dialog {
+    width: 50%;
+    margin: 30px auto;
+}
+}
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+
+.inner-addon {
+  position: relative;
+}
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+.left-addon .glyphicon {
+  left: 0px;
+}
+.right-addon .glyphicon {
+  right: 0px;
+}
+.left-addon input {
+  padding-left: 30px;
+}
+.right-addon input {
+  padding-right: 30px;
+}

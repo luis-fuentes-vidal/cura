@@ -1,0 +1,132 @@
+{% load staticfiles %}
+{% block title %}
+<title>CRM</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+{% endblock title %}
+<!-- Latest compiled and minified CSS -->
+
+
+<!-- Optional theme -->
+<!-- Latest compiled and minified JavaScript -->
+{%  block content %}
+  <form method="POST">
+  {% csrf_token %}
+  <div class="col-md-12">
+  <div class="col-xs-10 col-md-10"></div>
+  <div class="col-xs-10 col-md-10">
+    <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..." name="buscar" value="{{ request.POST.buscar }}">
+</div>
+    <div class="col-xs-2 col-md-2">
+      <button class="btn btn-primary" type="submit" align="left">
+        <i>GO</i>
+      </button>
+    </div>
+</div>
+</form>
+
+
+          <div class=" row" style="margin: 0px;">
+              <div class="col-md-4 col-sm-4 col-xs-12 col-md-offset-4">
+                <form method="POST" enctype="multipart/form-data" action="{% url 'web:subirCSV2' %}">
+                    <legend class="mi-form-legend">Archivo csv</legend>
+               {% csrf_token %}
+          {{ excelform.archivo }}
+          <input type="file" name="archivo" class="form-control" required="" id="id_archivo">
+          <button type="submit" class="btn btn-info">Guardar</button>
+          </form>
+          <div class="form-group" style="padding-top: 20px;">
+          </div>
+          </div>
+          </div>
+<table class="table" id="tableNoticias">
+    <thead style="background-color: #ebebeb; margin: 0px; font-size: 13px; text-align: center">
+        <tr>
+            <th class="text-center">d_codigo</th>
+            <th class="text-center">d_asenta</th>
+            <th class="text-center">d_tipo_asenta</th>
+            <th class="text-center">D_mnpio</th>
+            <th class="text-center">d_estado</th>
+            <th class="text-center">d_ciudad</th>
+            <th class="text-center">d_CP</th>
+            <th class="text-center">c_estado</th>
+            <th class="text-center">c_oficina</th>
+            <th class="text-center">c_CP</th>
+            <th class="text-center">c_tipo_asenta</th>
+            <th class="text-center">c_mnpio</th>
+            <th class="text-center">id_asenta_cpcons</th>
+            <th class="text-center">d_zona</th>
+            <th class="text-center">c_cve_ciudad</th>
+        </tr>
+    </thead>
+    <tbody style="background: white; margin: 0px; font-size: 11px; text-align: center">
+        {% if crm %}
+        {% for crm in crm %}
+        <tr>
+            <td style="vertical-align : middle;">
+                {{crm.d_codigo}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.d_asenta}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.d_tipo_asenta}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.D_mnpio}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.d_estado}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.d_ciudad}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.d_CP}}
+            </td>
+             <td style="vertical-align : middle;">
+                {{crm.c_estado}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.c_oficina}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.c_CP}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.c_tipo_asenta}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.c_mnpio}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.id_asenta_cpcons}}
+            </td>
+            <td style="vertical-align : middle;">
+                {{crm.d_zona}}
+            </td>
+             <td style="vertical-align : middle;">
+                {{crm.c_cve_ciudad}}
+
+            </td>
+
+        </tr>
+        {% endfor %}
+
+        {% else %}
+        <h1>No hay registros</h1>
+
+        {% endif %}
+    </tbody>
+
+</table>
+
+{% endblock %}
